@@ -1,0 +1,11 @@
+package tec_java;
+
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class Main {
+	//prueba de TreeMap
+	SortedMap sm = new TreeMap();
+	sm.put(3, "intruccion");
+
+}

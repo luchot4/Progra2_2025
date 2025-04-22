@@ -1,0 +1,19 @@
+package tec_java;
+
+import java.util.Iterator;
+import java.util.Map;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class Main {
+	public static void main(String[] args) {
+		SortedMap  sm=new TreeMap();
+		sm.put(3, "Intruccion");
+		sm.put(2, 5);
+		Iterator<Map.Entry<Integer,String>> iterator = sm.entrySet().iterator();
+		while (iterator.hasNext()) {
+			Object claveValor = iterator.next();
+			System.out.println("Clave = Valor : "+claveValor);
+		}
+	}
+}

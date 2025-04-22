@@ -1,0 +1,75 @@
+package tec_java;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class Main {
+	public static void main(String[] args) {
+		//Prueba de iteradores
+		List <String> lasPersonas = new ArrayList();		
+		lasPersonas.add("Juan");
+		lasPersonas.add("Pepe");
+		
+		Iterator<String> it = lasPersonas.iterator() ;
+		while(it.hasNext()){
+			String unaPersona = (String) it.next();
+			System.out.println("Lista de personas: " + unaPersona);
+		}
+		
+		//Prueba de TreeMap
+		SortedMap  sm=new TreeMap();
+		sm.put(3, "Intruccion");
+		sm.put(2, 5);
+		Iterator<Map.Entry<Integer,String>> iterator = sm.entrySet().iterator(); //Le puse el Map.Entry<>
+		while (iterator.hasNext()) {
+			Object claveValor = iterator.next();
+			System.out.println("Clave = Valor : "+claveValor);
+		}
+		
+		//Prueba de iteradores
+		ArrayList<String> lista = new ArrayList();
+		lista.add("Pedro");
+		lista.add("Olga");
+		lista.add("Miguel");
+		lista.add("Antonio");
+		lista.add("Pedro");
+		
+		Iterator<String> iterador =  lista.iterator();
+		while(iterador.hasNext()) {
+			System.out.println("Lista de nombre por Iteradores: " + iterador.next());
+		}
+		//Ventaja de Iteradores
+		
+		Iterator<String> it2 = lista.iterator();
+		while(it2.hasNext()) {
+			String nombre2 = it2.next();
+			if(nombre2.equals("Pedro")) {
+				it2.remove();
+				System.out.println("lista sin Pedro: " + it2.next());
+			}
+		}
+		
+		
+		//Prueba de ForEach
+		ArrayList<String> lista2 = new ArrayList();
+		lista2.add("Pedro");
+		lista2.add("Olga");
+		lista2.add("Miguel");
+		lista2.add("Antonio");
+		lista2.add("Pedro");
+		for(String nombre : lista2) {
+			System.out.println("Lista de nombres por ForEach: " + nombre);
+		}
+		//Problemas del ForEach
+//		for(String nombre2 : lista2) {
+//			if(nombre2.equals("Pedro")) {
+//				lista2.remove("Pedro");
+//			}
+//		}
+		
+	}
+}
