@@ -1,0 +1,12 @@
+package clase_27_5;
+
+public class ABB <T extends Comparable<T>> extends AB<T>{
+	/*- internosMenorIgual(17) debería retornar “{ 3 11 15 }”
+	  - internosMenorIgual(11) debería retornar “{ 3 11 }”
+	  - internosMenorIgual(2) debería retornar “{ }”*/
+	String internosMenorIgual(T elem) {
+		
+		return "{" + internosMenorIgual(raiz,elem) + "}";
+	}
+	
+}

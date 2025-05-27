@@ -1,0 +1,9 @@
+package clase_27_5;
+
+public class Pract {
+	//internos(ABB)
+	//multiplosPostOrden(AB<int>)
+	public static void main(String[] args) {
+//		internosMenorIgual(17);
+	}
+}

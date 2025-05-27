@@ -1,0 +1,8 @@
+package clase_27_5;
+
+public class ABB <T extends Comparable<T>> extends AB<T>{
+	String internosMenorIgual(T elem) {
+		
+	}
+	
+}

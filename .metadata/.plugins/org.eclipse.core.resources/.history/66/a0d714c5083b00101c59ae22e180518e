@@ -1,0 +1,26 @@
+package clase_27_5;
+
+public class Nodo <T>{
+	T elem;
+	Nodo der, izq;
+
+	Nodo(T valor) {
+		elem = valor;
+}
+}
+//	private T info;
+//	protected Nodo<T> der;
+//	protected Nodo<T> izq;
+//	protected Nodo nodo;
+//	public Object elem;
+//	
+//	public Nodo(T nodo) {
+//		this.info = info;
+//		
+//	}
+//	@Override
+//	public String toString() {
+//		return info.toString();
+//	}
+//	
+

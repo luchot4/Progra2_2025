@@ -1,0 +1,27 @@
+package clase_27_5;
+
+public class ABB <T extends Comparable<T>> extends AB<T>{
+	/*- internosMenorIgual(17) debería retornar “{ 3 11 15 }”
+	  - internosMenorIgual(11) debería retornar “{ 3 11 }”
+	  - internosMenorIgual(2) debería retornar “{ }”*/
+
+
+	String internosMenorIgual(T elem) {
+		return "{" + internosMI(raiz,elem) + "}";
+	}
+
+	String internosMI(Nodo<T> nodo, T elem) {
+		if(nodo == null ) {
+			return " ";
+		}
+		if(nodo.izq == null && nodo.der == null) {
+			return "";
+		}
+		if(nodo.elem.compareTo(elem) > 0) {
+			return internosMI(nodo.der,elem);
+		}
+		return internosMI(nodo.izq, elem) + nodo.elem + " " + 
+		internosMI(nodo.der, elem);
+	}
+	
+}
