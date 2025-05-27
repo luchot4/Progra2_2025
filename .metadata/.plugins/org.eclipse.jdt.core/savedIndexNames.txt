@@ -1,7 +1,6 @@
 INDEX VERSION 1.134+C:\Users\Lucho\Documents\Para_Programacion\Eclipse_Java\Progra2_2025\.metadata\.plugins\org.eclipse.jdt.core
 2490892350.index
 3917891268.index
-1288848795.index
 4155563320.index
 3746848976.index
 1865797976.index
